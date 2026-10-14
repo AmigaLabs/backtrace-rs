@@ -176,6 +176,7 @@ cfg_if::cfg_if! {
                 unix,
                 not(target_os = "emscripten"),
                 not(all(target_os = "ios", target_arch = "arm")),
+                not(target_os = "amigaos"),
             ),
             all(
                 target_env = "sgx",
